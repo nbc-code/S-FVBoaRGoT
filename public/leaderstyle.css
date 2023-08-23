@@ -1,0 +1,48 @@
+#lboard {
+			background-color: dodgerblue;
+		}
+		h1 {
+		background-color: #76749C;
+			padding: 5px;
+			font-size: 50px;
+			text-align: center;
+		}
+		table {
+		  font-family: arial, sans-serif;
+		  border-collapse: collapse;
+		  width: 100%;
+		}
+
+		td {
+		  font-size: 25px;
+		  border: 1px solid black;
+		  text-align: center;
+		  padding: 20px;
+		}
+		th {
+		  height: 50px;
+		  font-size: 30px;
+		  background-color: dodgerblue;
+		  border: 1px solid black;
+		  text-align: center;
+		  padding: 20px;
+		}
+
+		tr:nth-child(even) {
+		  background-color: #dddddd;
+		}
+		#buttons{
+			padding: 0px;
+		}
+		#buttons p{
+			font-size: 28px;
+			padding: 2px;
+			float: left;
+			margin: 1% 10%;
+		}
+		#home{
+			background-color: #00cc99;
+		}
+		#sort{
+			background-color: #b3ffec;
+		}

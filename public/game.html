@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html en="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sea-Fairing Vehicles Battling on a Random Grid of Terrain</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="game_board_style.css">
+        <script src="/socket.io/socket.io.js"></script>
+        
+
+    </head>
+
+    <body>
+
+        <section id="clouds">
+            <div class="cloud cloud1"></div>
+            <div class="cloud cloud2"></div>
+            <div class="cloud cloud3"></div>
+        </section>
+    
+        <section id="waves">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+            <div class="wave wave4"></div>
+        </section>
+
+        <div id="GameBoard">
+            
+            <canvas id="board" class="gameBox"></canvas>
+            <canvas id="board2" class="gameBox"></canvas>
+
+            <script id="gameplay" src="./game_state.js"></script>
+            <!--<script id="gameplay" src="./gameplay.js"></script>-->
+
+            <input type="button" id="startGameBtn" class="gameBtn" onclick="setup();" value="A button">
+            <input type="button" id="exitGameBtn" class="gameBtn" onclick="exitGame();" value="Exit Game">
+
+            <div id="SelectionBtns">
+                <input type="button" id="select1" class="gameBtn" onclick="shipSelect(1);" value="Blue 1">
+                <input type="button" id="select2" class="gameBtn" onclick="shipSelect(2);" value="Blue 2">
+                <input type="button" id="select3" class="gameBtn" onclick="shipSelect(3);" value="Blue 3">
+                <input type="button" id="select4" class="gameBtn" onclick="shipSelect(4);" value="red 1">
+                <input type="button" id="select5" class="gameBtn" onclick="shipSelect(5);" value="red 2">
+                <input type="button" id="select6" class="gameBtn" onclick="shipSelect(6);" value="red 3">
+            </div>
+        </div>
+
+        <script>
+            function exitGame()
+            {
+                window.open("home_screen1.html", "_self");
+            }
+        </script>
+        <script>
+
+        </script>
+    </body>
+    
+</html>

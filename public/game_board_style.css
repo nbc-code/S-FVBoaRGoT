@@ -1,0 +1,125 @@
+
+#board
+{
+    top: 10%;
+    left: 10%;
+    z-index: 1000;
+    width: 1500px;
+    height: 750px;
+    position: absolute;
+
+    /*grid-template-rows: repeat(15, 50px);
+    grid-template-columns: repeat(30, 50px);*/
+
+    border: 5px solid #4E4E4E;
+    border-style: outset;
+
+    background-image:
+            linear-gradient(45deg, #0077b3 25%, transparent 25%),
+            linear-gradient(135deg, #0077b3 25%, transparent 25%),
+            linear-gradient(45deg, transparent 75%, #0077b3 75%),
+            linear-gradient(135deg, transparent 75%, #0077b3 75%);
+
+    background-color: #439494;
+    background-size: 100px 100px;
+    background-position: 0 0, 50px 0, 50px -50px, 0 50px;
+}
+
+#board2
+{
+    z-index: 3000;
+    top: 10%;
+    left: 10%;
+    width: 1500px;
+    height: 750px;
+    position: absolute;
+    border: 5px solid #4E4E4E;
+    border-style: outset;
+    background: none;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+.wave.wave1
+{
+    z-index: 1001;
+    height: 90px;
+}
+.wave.wave4
+{
+    bottom: 50px;
+}
+.wave.wave2
+{
+    bottom: 0px;
+}
+.wave.wave3
+{
+    bottom: 10px;
+}
+
+.cloud.cloud2
+{
+    top: -25px;
+}
+.cloud.cloud3
+{
+    top: -50px;
+    z-index: 1002;
+}
+
+.gameBtn
+{
+    top: 2%;
+    left: 2%;
+    position: absolute;
+    z-index: 2001;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    background-color: lightblue;
+    color: white;
+    border: 2px solid black;
+}
+
+#exitGameBtn
+{
+    left: 10%;
+}
+
+.gameBtn:hover
+{
+    background-color: white;
+	color: #00004d;
+}
+
+#select1
+{
+    top: 40%;
+    left: 5%;
+}
+#select2
+{
+    top: 45%;
+    left: 5%;
+}
+#select3
+{
+    top: 50%;
+    left: 5%;
+}
+#select4
+{
+    top: 40%;
+    left: 90%;
+}
+#select5
+{
+    top: 45%;
+    left: 90%;
+}
+#select6
+{
+    top: 50%;
+    left: 90%;
+}

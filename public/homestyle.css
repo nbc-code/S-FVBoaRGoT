@@ -1,0 +1,94 @@
+h1{
+	position: absolute;
+	top: 20%;
+	left: 23.5%;
+	z-index: 990;
+	width: 1000px;
+	height: 75px;
+	border-style: solid;
+	border-right-color: #0000cc;
+	border-bottom-color: #0000b3;
+	background-color: lightblue;
+	color: white;
+	font-size: 40px;
+	text-align: center;
+}
+#game {
+	position: absolute;
+	top: 35%;
+	left: 35%;
+	z-index: 990;
+	width: 530px;
+	height: 75px;
+	border-style: solid;
+	font-size: 80px;
+	border-bottom-color: #0000cc;
+	border-right-color: #0000cc;
+	background-color: #4d4dff;
+	color: #e6e6e6;
+	
+	text-align: center;
+}
+
+#game:hover {
+	background-color: #0077b3;
+}
+
+#fgame {
+	position: absolute;
+	top: 45%;
+	left: 36.4%;
+	z-index: 990;
+	width: 480px;
+	height: 35px;
+	border-style: solid;
+	font-size: 40px;
+	border-bottom-color: #0000cc;
+	border-right-color: #0000cc;
+	background-color: #4d4dff;
+	color: #e6e6e6;
+	text-align: center;
+}
+
+#fgame:hover {
+	background-color: #0077b3;
+}
+
+#lboard {
+	position: absolute;
+	top: 55%;
+	left: 39.9%;
+	z-index: 990;
+	width: 335px;
+	height: 35px;
+	border: solid;
+	font-size: 40px;
+	border-bottom-color: #0000cc;
+	border-right-color: #0000cc;
+	background-color: #009999;
+	color: #f2f2f2;
+	text-align: center;
+}
+
+#lboard:hover {
+	background-color: #ff3300;
+}
+
+#logout {
+	position: absolute;
+	top: 78%;
+	left: 4%;
+	z-index: 990;
+	width: 140px;
+	height: 30px;
+	border: 2px solid black;
+	font-size: 30px;
+	text-align: center;
+	background-color: lightblue;
+	color: white;
+}
+
+#logout:hover {
+	background-color: white;
+	color: #00004d;
+}

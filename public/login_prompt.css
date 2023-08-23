@@ -1,0 +1,178 @@
+#login-register
+{
+    width: 400px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 45%;
+    transform: translate(-50%, -50%);
+    background: #4E4E4E;
+    text-align: center;
+    box-shadow: 5px 5px black;
+    overflow: hidden;
+    border-style: outset;
+    border-color: #DCDCDC;
+}
+
+::placeholder
+{
+    color: #DCDCDC;
+}
+
+span
+{
+    position: absolute;
+    background: #4E4E4E;
+}
+
+#login
+{
+    left: -50%;
+    background: #4E4E4E;
+}
+
+#register
+{
+    left: 120%;
+    background: #4E4E4E;
+}
+
+.box
+{
+    position: relative;
+    transition: .75s;
+    padding: 30px;
+}
+
+.box2
+{
+    position: relative;
+    transition: .75s;
+    padding: 10px;
+}
+
+.box input[type = "text"],.box input[type ="password"]
+{
+    background: none;
+    margin: 30px;
+    text-align: center;
+    border: 3px outset #179BF6;
+    padding: 15px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#username.invalid
+{
+    border-color: red;
+}
+
+.box input[type = "text"]:focus,.box input[type ="password"]:focus
+{
+    width: 280px;
+    border-color: #ffffff;
+}
+
+.box input[type = "button"]
+{
+    background: none;
+    margin: 30px auto;
+    text-align: center;
+    border: 3px outset #3CF075;
+    padding: 14px 40px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.3s;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.box input[type = "button"]:hover
+{
+    background: #3CF075;
+}
+
+.toggle-btn
+{
+    padding:15px 50px;
+    cursor:pointer;
+    background: transparent;
+    position: relative;
+    outline: none;
+    color: white;
+    border: 0;
+    border-radius: 24px;
+    font-weight: bolder;
+}
+
+#btn
+{
+    position: absolute;
+    width: 100px;
+    height: 90%;
+    border-radius: 24px;
+    transition: .75s;
+    top: auto;
+    left: 13%;
+    border: 3px outset #3CF075;
+    box-shadow: 2px solid black;
+}
+
+.button-box
+{
+    width:auto;
+    position:relative;
+    background-color: #4E4E4E;
+    border-radius: 24px;
+    margin: auto auto;
+
+}
+
+.box2 input[type = "text"],.box2 input[type ="password"]
+{
+    background: none;
+    margin: 15px auto;
+    text-align: center;
+    border: 3px outset #179BF6;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.box2 input[type = "text"]:focus,.box2 input[type ="password"]:focus
+{
+    width: 280px;
+    border-color: #ffffff;
+}
+
+.box2 input[type = "button"]
+{
+    background: none;
+    margin: 15px auto;
+    text-align: center;
+    border: 3px outset #3CF075;
+    padding: 10px 20px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.3s;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.box2 input[type = "button"]:hover
+{
+    background: #3CF075;
+}

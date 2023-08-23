@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html en="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Sea-Fairing LeaderBoard</title>
+		
+		<link rel="stylesheet" type="text/css" href="leaderstyle.css">
+		<script type="text/javascript">
+		var players = [
+		[1, "Joe", 3, 2, 2],
+		[2, "Ryan", 10, 2, 5],
+		[3, "Kirsten", 12, 4, 3],
+		[4, "Noah", 0, 2, 0],
+		[5, "Jake", 12, 2, 6],
+		[6, "Zach", 4, 2, 2],
+		[7, "Luke", 20, 2, 10],
+		[8, "Luis", 18, 2, 9],
+		[9, "Shihab", 5, 2, 2],
+		[10, "Aaditya", 8, 2, 4]
+		];
+		
+		function makeTable() {
+			var table = document.getElementById("leaders");
+			if(document.getElementById("myTableBody") != null)
+			{
+				document.getElementById("myTableBody").remove();
+			}
+			var tableBody = document.createElement('tbody');
+			tableBody.id = "myTableBody";
+			for (var i = 0; i<players.length; i++){
+			   var tr = document.createElement('TR');
+			   tableBody.appendChild(tr);
+			   
+			   for (var j=0; j<players[0].length; j++){
+				   var td = document.createElement('TD');
+				   td.appendChild(document.createTextNode(players[i][j]));
+				   tr.appendChild(td);
+			   }
+			}
+			table.appendChild(tableBody);
+		}
+		
+		function ratioSort() {
+			let tempArr;
+			for(var i =0; i<players.length; i++)
+			{
+			let maxIdx = i;
+				for(var x = i; x< players.length; x++)
+				{
+					if(players[x][4]>players[maxIdx][4])
+					{
+						maxIdx = x;
+					}
+				}
+				tempArr = players[i];
+				players[i] = players[maxIdx];
+				players[i][0] = i + 1;
+				players[maxIdx] = tempArr;
+			}
+			makeTable();
+		}
+		
+		function winSort() {
+			let tempArr;
+			for(var i =0; i<players.length; i++)
+			{
+			let maxIdx = i;
+				for(var x = i; x< players.length; x++)
+				{
+					if(players[x][2]>players[maxIdx][2])
+					{
+						maxIdx = x;
+					}
+				}
+				tempArr = players[i];
+				players[i] = players[maxIdx];
+				players[i][0] = i + 1;
+				players[maxIdx] = tempArr;
+			}
+			makeTable();
+		}
+		
+		function goHome()
+		{
+			window.open("home_screen1.html", "_self");
+		}
+		</script>
+    </head>
+    <body>
+		<h1 onclick="winSort()">LEADERBOARD</h1>
+		<div id="buttons">
+		<p id="home" onclick='goHome()'>Home</p>
+		<p id="sort" onclick='winSort()'>Sort</p>
+		</div>
+		<table id="leaders"  border="1" cellpadding="2">
+			<thead>
+			<tr>
+				<th><b>Rank</b></th>
+				<th><b>Name</b></th>
+				<th onclick="winSort()"><b>Wins</b></th>
+				<th><b>Losses</b></td>
+				<th onclick="ratioSort()"><b>W/L Ratio</b></td>
+			</tr>
+			</thead>
+			<tbody id="myTableBody">
+			</tbody>
+		</table>
+	
+    </body>
+</html>

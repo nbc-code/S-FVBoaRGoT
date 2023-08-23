@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html en="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Sea-Fairing Vehicles Battling on a Random Grid of Terrain</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="homestyle.css">
+		
+    </head>
+
+    <body>
+		<h1>Sea-Fairing Vehicles Battling on a Random Grid of Terrain</h1>
+		<div id="game" onclick='playGame()'>Play Game</div>
+		<div id="fgame">Play with a Friend!</div>
+		<div id="lboard" onclick='leaderB()'>Leader Board</div>
+		<div id="logout" onclick='logOut()'>Log Out</div>
+
+        <section id="clouds">
+            <div class="cloud cloud1"></div>
+            <div class="cloud cloud2"></div>
+            <div class="cloud cloud3"></div>
+        </section>
+    
+        <section id="waves">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+            <div class="wave wave4"></div>
+        </section>
+		
+		<script>
+        function playGame()
+        {
+            window.open('game.html', '_self');
+        }
+		function logOut()
+		{
+			window.open('login_screen.html', '_self');
+		}
+		function leaderB()
+		{
+			window. open('leaderBpage.html', '_self');
+		}
+    </script>
+		
+    </body>
+</html>

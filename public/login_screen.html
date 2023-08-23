@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="login_prompt.css">
+    <script id="open_game" src="./game_state.js"></script>
+</head>
+
+<body>
+
+    <!--Clouds for animation-->
+    <section id="clouds">
+        <div class="cloud cloud1"></div>
+        <div class="cloud cloud2"></div>
+        <div class="cloud cloud3"></div>
+    </section>
+
+    <!--Waves for animation-->
+    <section id="waves">
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+    </section>
+
+    <div id="login-register" class="form-box">
+
+        <!--Login/Register top sliding buttons-->
+        <div class='button-box'>
+            <div id='btn'></div>
+            <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+            <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+        </div>
+
+        <!--Login form, Span tag is for css positioning-->
+        <span>
+            <form id="login" class="box" action="login_screen.html" method="post">
+                <input id="username" type="text" placeholder="Username" class="validate">
+                <input id="password" type="password" placeholder="Password">
+                <input type="button" onclick="openHome()" value="Login">
+            </form>
+        </span>
+
+        <!--Register form-->
+        <form id="register" class="box2" action="login_screen.html" method="post">
+            <input type="text" placeholder=" Enter Email">
+            <input type="text" placeholder=" Enter Username">
+            <input type="password" placeholder=" Enter Password">
+            <input type="password" placeholder=" Confirm Password">
+            <input  type="button" value="Register">
+        </form>
+    </div>
+
+    <!--Login prompt translation effect-->
+    <script>
+        var loginView = document.getElementById('login');
+        var registerView = document.getElementById('register');
+        var btnView = document.getElementById('btn');
+
+        function register()
+        {
+            loginView.style.left='-200%';
+            registerView.style.left='0%';
+            btnView.style.left='57.5%';
+        }
+
+        function login()
+        {
+            loginView.style.left='-50%';
+            registerView.style.left='120%';
+            btnView.style.left='13.5%';
+        }
+    </script>
+
+    <!--Testing event handler script for validation/errors-->
+    <script>
+        var input = document.querySelector(".validate");
+
+        input.addEventListener("input", validateInput);
+        input.addEventListener("blur", validateInput);
+
+        function validateInput() 
+        {
+            if (input.value == "error" || input.value == '') 
+            {
+                input.classList.add("invalid");
+            }
+            else 
+            {
+                input.classList.remove("invalid");
+            }
+        }
+    </script>
+
+    <!--New page-->
+    <script>
+        function openHome()
+        {
+            window.open('home_screen1.html', '_self');
+        }
+	</script>
+	
+	<!--New Game-->
+	<script>
+        function openBoardGame()
+        {
+            window.open('game.html', '_self');
+        }
+	</script>
+	
+</body>
+</html>
